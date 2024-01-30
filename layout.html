@@ -1,10 +1,9 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" href="bootstrap.min.css">
 
 </head>
 <body>
@@ -32,7 +31,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">{{ request.info_dict.name }} <span class="caret"></span></a>
+                       aria-expanded="false"> 个人用户 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">个人资料</a></li>
                         <li><a href="#">修改密码</a></li>
@@ -44,13 +43,5 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
-
-<div class="container">
-    {% block content %}{% endblock %}
-</div>
-
-<script src="{% static 'bootstrap.min.js' %}"></script>
-<script src="{% static 'jquery-3.7.1/dist/jquery.min.js' %}"></script>
-
 </body>
 </html>
